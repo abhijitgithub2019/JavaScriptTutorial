@@ -1,13 +1,17 @@
 function MovieName(movie, actor) {
+    if(!new.target) {
+        console.log("new.target");
+        return new MovieName(movie, actor);
+    }
     this.moviename = movie;
     this.actor = actor
 
 }
 
 MovieName.prototype.printCast = function(){
-    return this.actor + "casted"+this.moviename;
+    return this.actor + " casted in "+this.moviename;
 }
 
-let m = new MovieName("Kalki", "Amitabh");
+let m = MovieName("Kalki", "Amitabh");
 let m1 = new MovieName("Kalki", "Prabhas");
-console.log(m1.hasOwnProperty("printCast"));
+console.log(m1);
