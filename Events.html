@@ -12,19 +12,27 @@
 </head>
 
 <body>
-    <div style="align-items: center; font-size: 20px; color: orchid;">Welcome to Events related examples</div>
-    <div id="parent" style="height: 600px; width: 700px; border: 3px solid olivedrab; border-radius: 3px;">
-        <div id="Child1">Child1
-            <div id="subchild1" style="height: 50px; width: 140px; border: 2px solid tomato;"> Sub Child1
+    <form action="" onsubmit="onSubmitForm(event)">
+        <div style="align-items: center; font-size: 20px; color: orchid;">Welcome to Events related examples</div>
+        <div id="parent" style="height: 600px; width: 700px; border: 3px solid olivedrab; border-radius: 3px;">
+            <div id="Child1">Child1
+                <div id="subchild1" style="height: 50px; width: 140px; border: 2px solid tomato;"> Sub Child1
 
-                <div style="align-items: center;height: 30px; width: 100px; border: 2px solid slateblue;"
-                    id="subsubchild1">sub Sub Child1</div>
+                    <div style="align-items: center;height: 30px; width: 100px; border: 2px solid slateblue;"
+                        id="subsubchild1">sub Sub Child1</div>
+                </div>
             </div>
+            <div id="Child2">Child2</div>
+            <div id="Child3">Child3</div>
+            <div id="Child4">Child4</div>
+            <a id="g" href="https://google.com">Navigate to Google</a>
+            <button type="submit">Submit</button>
         </div>
-        <div id="Child2">Child2</div>
-        <div id="Child3">Child3</div>
-        <div id="Child4">Child4</div>
-    </div>
+    </form>
+    <div id="cookie"></div>
+    <button onclick="getCookie()">Get Cookie from Cookies site</button>
+    
 </body>
 <script type="text/javascript" src="./Events.js"></script>
+
 </html>
