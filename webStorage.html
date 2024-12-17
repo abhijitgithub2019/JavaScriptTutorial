@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Web Storage</title>
+</head>
+
+<body>
+    <div style="border: 2px solid mediumslateblue; height: 500px; width: 800px;">
+        <div style="margin: 20px;">
+            <p style="text-decoration: underline;">Welcome to Web Storage</p>
+            <div>
+                <p>Session Storage : </p>
+                <p id="sessionS"></p>
+                <input type="button" value="Create Session Storage" onclick="onCreateSStorage('abhiSession')" />
+                <input type="button" value="Get Session Storage" onclick="onGetSStorage()" />
+                <input type="button" value="Remove Session Storage" onclick="OnRemoveSessionStorage()" />
+                <input type="button" value="Clear Session Storage" onclick="OnClearSessionStorage()" />
+            </div>
+            <div>
+                <p>Local Storage : </p>
+                <p id="localS"></p>
+                <input type="button" value="Create Local Storage" onclick="onCreateLocalStorage('abhiLocal')" />
+                <input type="button" value="Get Local Storage" onclick="onGetLocalStorage()" />
+                <input type="button" value="Remove Local Storage" onclick="OnRemoveStorage()" />
+                <input type="button" value="Clear Local Storage" onclick="OnClearLocalStorage()" />
+                <input type="button" value="Calculate Local Storage" onclick="OnCalCulateLocalStorage()" />
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./webStorage.js" type="text/javascript"></script>
+
+</html>
