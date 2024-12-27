@@ -1,0 +1,67 @@
+.callStack {
+    width: 50%;
+    height: 250px;
+    padding: 10px;
+    flex: 1;
+}
+
+.webApi {
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    flex: 1;
+}
+
+.microT {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin-left: 52%;
+    bottom: 222px;
+}
+
+.macroT {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin-left: 52%;
+    bottom: 211px;
+}
+
+.execution {
+    position: relative;
+    bottom: 100px;
+    left: 60%;
+    cursor: pointer;
+}
+
+.executionStart {
+    position: relative;
+    bottom: 100px;
+    left: 70%;
+    cursor: pointer;
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes pop1 {
+    to {
+        opacity: 0;
+    }
+
+    from {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+}
